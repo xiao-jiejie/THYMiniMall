@@ -1,0 +1,6 @@
+/* pages/home/my-childCpns/my-popular/my-popular.wxss */
+
+/* 本周流行 */
+.popular image{
+  width: 100%;
+}

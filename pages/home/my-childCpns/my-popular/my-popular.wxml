@@ -1,0 +1,6 @@
+<!--pages/home/my-childCpns/my-popular/my-popular.wxml-->
+
+<!-- 3.本周流行 -->
+<view class="popular">
+  <image src="../../../../assets/images/home/popular_bg.jpg" mode="widthFix"/>
+</view>

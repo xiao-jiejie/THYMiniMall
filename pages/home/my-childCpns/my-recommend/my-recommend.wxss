@@ -1,0 +1,26 @@
+/* pages/home/my-childCpns/my-recommend/my-recommend.wxss */
+
+/* 推荐数据 */
+.my-recommend{
+  display: flex;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 16rpx solid #eee;
+}
+
+/* 水平平铺 */
+.my-recommendItem{
+  flex: 1;
+  text-align: center;
+}
+
+.my-recommendItem image{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.my-recommendItem view{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  color: #555;
+}

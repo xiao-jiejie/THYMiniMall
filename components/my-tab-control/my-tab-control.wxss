@@ -1,0 +1,25 @@
+/* components/my-tab-control/my-tab-control.wxss */
+
+/* 5.tab-control展示 */
+.my-tab-control{
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+  padding-bottom: 8rpx;
+}
+
+.my-tab-controlItem{
+  flex: 1;
+  text-align: center;
+}
+
+/* 选中时的样式*/
+.active{
+  color:#ff5777;
+}
+.active text{
+  border-bottom: 2px solid #ff5777;
+  padding: 16rpx;
+}

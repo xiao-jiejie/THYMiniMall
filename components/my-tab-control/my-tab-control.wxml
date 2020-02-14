@@ -1,0 +1,11 @@
+<!--components/my-tab-control/my-tab-control.wxml-->
+
+<!-- 5.tab-control展示 -->
+<!-- 在data中定义currentIndex当前索引属性，如果索引等于index，样式显示为当前选中 -->
+<view class="my-tab-control">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class="my-tab-controlItem {{currentIndex == index ? 'active' : ''}}" bind:tap="handleItemClick"  data-index="{{index}}" >
+    <text>{{item}}</text>
+    </view>
+  </block> 
+</view>

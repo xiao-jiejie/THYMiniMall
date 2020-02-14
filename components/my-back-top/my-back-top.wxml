@@ -1,0 +1,6 @@
+<!--components/my-back-top/my-back-top.wxml-->
+
+<!-- 6.返回顶部 -->
+<view class="backTop" bind:tap="handleBackTop">
+  <image src="/assets/images/common/top.png"/>
+</view>

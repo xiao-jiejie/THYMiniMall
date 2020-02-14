@@ -1,0 +1,25 @@
+<!--components/my-swiper/my-swiper.wxml-->
+<!-- 1.轮播图 -->
+<!-- swiper组件属性
+  circular:衔接滑动，默认false
+  autoplay:是否自动切换，默认false
+  interval：自动滑动时间间隔，默认5000
+  duration:滑动动画时间，默认500
+  indicator-dots：显示指示器。默认false
+  indicator-color:指示器颜色，默认rgba(0, 0, 0, .3)
+  indicator-active-color：当前选中的指示器颜色，默认#000000
+-->
+<swiper class="my-swiper" circular="true" autoplay="true" interval="3000" duration="300" indicator-dots="true" indicator-active-color="#ff5777">
+
+  <!-- 有多少数据就存放几个swiper-item，遍历数据用block + wx:for -->
+  <block wx:for="{{banners}}" wx:key="index">
+    <swiper-item class="my-swiperItem">
+      <!-- 这里的image是通过banners取出的数据 
+        mode属性：图片裁剪、缩放的模式（默认scaleToFill）
+        widthFix:缩放模式，宽度不变，高度自动变化，保持原图宽高比不变
+      -->
+      <image src="{{item.image}}" mode="widthFix"/>
+    </swiper-item>
+  </block>
+
+</swiper>

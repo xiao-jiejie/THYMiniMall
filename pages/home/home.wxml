@@ -1,0 +1,24 @@
+<!-- 1.轮播图展示 -->
+<!-- 这里的banners是my-swiper组件传过来的，{{banners}}是首页传过去的 -->
+<my-swiper banners="{{banners}}"/>
+
+<!-- 2.推荐数据展示 -->
+<my-recommend recommends="{{recommends}}" bind:imageLoad="handleImageLoad"/>
+
+<!-- 3.本周流行展示 -->
+<my-popular/>
+
+<!-- 4.tab-control展示 -->
+<!-- 拿到组件传过来的titles参数 
+  itemClick是组件传过来的点击事件
+-->
+<my-tab-control class="{{isTabFixed ? 'fixed' : ''}}" titles="{{titles}}" bind:itemClick="handleTypeClick" id="tab-control"/>
+
+<my-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}"/>
+
+ <!-- 5.商品数据展示 -->
+<my-goods goods="{{goods[currentType].list}}"/>
+
+<!-- 6.返回顶部 -->
+<!-- hidden属性对于自定义组件时无效的 -->
+<my-back-top wx:if="{{showBackTop}}"/>
